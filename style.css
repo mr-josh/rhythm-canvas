@@ -15,8 +15,18 @@ canvas {
     box-shadow: 0 0 14px #0003;
 }
 
+sup {
+    font-size: .75rem;
+    margin: 0;
+}
+
 .game {
     position: relative;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
 }
 
 #accuracy {

@@ -147,6 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
         startButton.disabled = true;
         startButton.innerText = 0;
 
+        audioContext.resume();
         audioSource.play();
         startButton.blur();
         startGame(audioSource, audioContext, gameContext, startButton, accuracyText);

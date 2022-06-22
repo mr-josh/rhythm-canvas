@@ -73,7 +73,7 @@ function startGame(player, audioCtx, canvasCtx, scoreCounter, accuracyText) {
             }
 
             // We were close but missed
-            else if (nextNoteDistance > goalHeight) {
+            else if (nextNoteDistance > goalHeight && nextNoteDistance < goalHeight*3) {
                 scoreCounter.innerText = parseInt(scoreCounter.innerText) - 1;
                 chagneAccuracyText(accuracyText, "too early");
                 notes = notes.slice(1);
